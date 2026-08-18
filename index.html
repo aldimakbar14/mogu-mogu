@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mogu Mogu — Chewy. Fruity. Fun.</title>
+    <meta name="description" content="Mogu Mogu fruit drink with chewy nata de coco. Fresh, playful, and different.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== LOADING SCREEN ====== -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="assets/logo-mogu.png" alt="Mogu Mogu Logo" class="loading-logo">
+            <span class="loading-text">Mogu Mogu</span>
+        </div>
+        <div class="loading-bar">
+            <div class="loading-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- ====== 01 NAVBAR ====== -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">
+                <img src="assets/logo-mogu.png" alt="Mogu Mogu Logo" class="nav-logo">
+                <span>Mogu Mogu</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </label>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== 02 HERO ====== -->
+    <section class="hero" id="hero">
+        <!-- Video Background -->
+        <video class="hero-video" autoplay muted loop playsinline poster="mogu/frame-0001.jpg">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-label">Mogu Mogu&reg; / Fruit Drink</p>
+                <h1 class="hero-title">CHEWY.<br>FRUITY.<br><span class="text-orange">FUN.</span></h1>
+                <p class="hero-desc">Fruit drink with chewy nata de coco.</p>
+                <a href="#flavors" class="btn-primary">Explore Flavors <span class="btn-arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 03 FLAVOR PREVIEW ====== -->
+    <section class="flavors" id="flavors">
+        <div class="flavors-inner">
+            <div class="flavors-header">
+                <div class="flavors-header-left">
+                    <h2 class="flavors-title">PICK YOUR FLAVOR</h2>
+                    <p class="flavors-sub">Seven flavors. One chewy obsession.</p>
+                </div>
+                <div class="flavors-header-right">
+                    <span class="flavors-counter">01 / 07</span>
+                    <span class="flavors-hint">Drag to explore <span>&rarr;</span></span>
+                </div>
+            </div>
+
+            <div class="flavor-wrapper">
+                <div class="flavor-track">
+                    <div class="flavor-item fi-large" style="--fi-bg: #FFF0DD; --fi-accent: #FF7A00;">
+                        <div class="fi-deco" aria-hidden="true"><span></span><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/orange.png" alt="Mogu Mogu Orange" width="200" height="280"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Orange</span>
+                            <span class="fi-desc">Citrus &bull; Fresh</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-medium" style="--fi-bg: #F1F5E8; --fi-accent: #A8C96B;">
+                        <div class="fi-deco" aria-hidden="true"><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/Coconut.png" alt="Mogu Mogu Coconut" width="180" height="250"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Coconut</span>
+                            <span class="fi-desc">Creamy &bull; Classic</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-large" style="--fi-bg: #F1F7D8; --fi-accent: #B8DD45;">
+                        <div class="fi-deco" aria-hidden="true"><span></span><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/melon.png" alt="Mogu Mogu Melon" width="200" height="280"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Melon</span>
+                            <span class="fi-desc">Cool &bull; Sweet</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-large" style="--fi-bg: #FFF0F4; --fi-accent: #F58CA8;">
+                        <div class="fi-deco" aria-hidden="true"><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/lychee.png" alt="Mogu Mogu Lychee" width="200" height="280"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Lychee</span>
+                            <span class="fi-desc">Floral &bull; Fruity</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-medium" style="--fi-bg: #F3ECF8; --fi-accent: #75439A;">
+                        <div class="fi-deco" aria-hidden="true"><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/grape.png" alt="Mogu Mogu Grape" width="185" height="260"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Grape</span>
+                            <span class="fi-desc">Bold &bull; Juicy</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-large" style="--fi-bg: #FFF0F2; --fi-accent: #F04F62;">
+                        <div class="fi-deco" aria-hidden="true"><span></span><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/strawberry.png" alt="Mogu Mogu Strawberry" width="200" height="280"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Strawberry</span>
+                            <span class="fi-desc">Berry &bull; Fun</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-item fi-medium" style="--fi-bg: #FFF4D8; --fi-accent: #FFB300;">
+                        <div class="fi-deco" aria-hidden="true"><span></span></div>
+                        <div class="fi-brand">MOGU MOGU</div>
+                        <div class="fi-img"><img src="assets/mango.png" alt="Mogu Mogu Mango" width="185" height="260"></div>
+                        <div class="fi-info">
+                            <span class="fi-name">Mango</span>
+                            <span class="fi-desc">Tropical &bull; Golden</span>
+                            <span class="fi-link">View Flavor <span>&rarr;</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flavors-indicator">
+                <div class="flavors-progress">
+                    <div class="flavors-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 04 ABOUT ====== -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <!-- Heading di atas, urutan mobile: nomor 1 -->
+            <div class="about-heading">
+                <p class="section-label">About Mogu Mogu</p>
+                <h2 class="about-title">Fruit flavor meets<br>chewy nata de coco.</h2>
+            </div>
+
+            <!-- Botol di tengah, urutan mobile: nomor 2 -->
+            <div class="about-visual">
+                <div class="about-all-bottles">
+                    <img src="assets/orange.png" alt="Mogu Mogu Orange" class="bottle bottle-1">
+                    <img src="assets/Coconut.png" alt="Mogu Mogu Coconut" class="bottle bottle-2">
+                    <img src="assets/melon.png" alt="Mogu Mogu Melon" class="bottle bottle-3">
+                    <img src="assets/lychee.png" alt="Mogu Mogu Lychee" class="bottle bottle-4">
+                    <img src="assets/grape.png" alt="Mogu Mogu Grape" class="bottle bottle-5">
+                    <img src="assets/strawberry.png" alt="Mogu Mogu Strawberry" class="bottle bottle-6">
+                    <img src="assets/mango.png" alt="Mogu Mogu Mango" class="bottle bottle-7">
+                </div>
+            </div>
+
+            <!-- Deskripsi di bawah, urutan mobile: nomor 3 -->
+            <div class="about-content">
+                <p class="about-desc">Mogu Mogu brings together refreshing fruit flavors and chewy nata de coco for a drink that's simple, fun, and different from the ordinary.</p>
+                <a href="#flavors" class="btn-text">Read More <span>&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 06 PRE-ORDER ====== -->
+    <section class="preorder" id="contact">
+        <div class="preorder-inner">
+            <div class="preorder-left">
+                <p class="section-label">Pre-Order</p>
+                <h2 class="preorder-title">ORDER<br>NOW</h2>
+                <p class="preorder-desc">
+                    Pick your favorite flavor and get Mogu Mogu delivered straight to your door.
+                    Limited stock order now before it's gone!
+                </p>
+            </div>
+
+            <div class="preorder-right">
+                <form class="preorder-form" action="#" method="post">
+                    <h3 class="form-title">Order Form</h3>
+
+                    <div class="form-group">
+                        <label for="po-name">Full Name</label>
+                        <input type="text" id="po-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="po-phone">Phone Number</label>
+                            <input type="tel" id="po-phone" name="phone" placeholder="+62 8xx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="po-email">Email</label>
+                            <input type="email" id="po-email" name="email" placeholder="name@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="po-address">Shipping Address</label>
+                        <textarea id="po-address" name="address" rows="3" placeholder="Full address including zip code" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Choose Flavor</label>
+                        <div class="po-flavor-grid">
+                            <input type="radio" name="flavor" id="po-orange" value="orange" checked>
+                            <label for="po-orange" class="po-flavor-label">
+                                <img src="assets/orange.png" alt="Orange">
+                                <span>Orange</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-coconut" value="coconut">
+                            <label for="po-coconut" class="po-flavor-label">
+                                <img src="assets/Coconut.png" alt="Coconut">
+                                <span>Coconut</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-melon" value="melon">
+                            <label for="po-melon" class="po-flavor-label">
+                                <img src="assets/melon.png" alt="Melon">
+                                <span>Melon</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-lychee" value="lychee">
+                            <label for="po-lychee" class="po-flavor-label">
+                                <img src="assets/lychee.png" alt="Lychee">
+                                <span>Lychee</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-grape" value="grape">
+                            <label for="po-grape" class="po-flavor-label">
+                                <img src="assets/grape.png" alt="Grape">
+                                <span>Grape</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-strawberry" value="strawberry">
+                            <label for="po-strawberry" class="po-flavor-label">
+                                <img src="assets/strawberry.png" alt="Strawberry">
+                                <span>Strawberry</span>
+                            </label>
+
+                            <input type="radio" name="flavor" id="po-mango" value="mango">
+                            <label for="po-mango" class="po-flavor-label">
+                                <img src="assets/mango.png" alt="Mango">
+                                <span>Mango</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="po-qty">Number of Boxes</label>
+                        <select id="po-qty" name="quantity">
+                            <option value="1">1 Box (12 bottles)</option>
+                            <option value="2">2 Boxes (24 bottles)</option>
+                            <option value="3">3 Boxes (36 bottles)</option>
+                            <option value="5">5 Boxes (60 bottles)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="po-note">Notes (Optional)</label>
+                        <input type="text" id="po-note" name="note" placeholder="e.g. mixed flavors, afternoon delivery, etc.">
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full">
+                        Place Order <span class="btn-arrow">&rarr;</span>
+                    </button>
+
+                    <p class="form-disclaimer">
+                        By placing an order, you agree that we may contact you via WhatsApp for confirmation.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 07 FOOTER ====== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026 Mogu Mogu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
