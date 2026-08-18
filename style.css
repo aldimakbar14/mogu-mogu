@@ -363,6 +363,7 @@ h1, h2, h3 {
 .hero-content {
     padding: 60px 0;
     max-width: 640px;
+    text-align: left;
 }
 
 .hero-label {
@@ -376,7 +377,7 @@ h1, h2, h3 {
 }
 
 .hero-title {
-    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     line-height: 0.9;
     margin-bottom: 24px;
     color: #fff;
@@ -637,29 +638,6 @@ h1, h2, h3 {
 }
 
 /* Progress indicator */
-.flavors-indicator {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.flavors-progress {
-    width: 200px;
-    height: 2px;
-    background: #E8E8E8;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.flavors-progress-bar {
-    width: 14.3%;
-    height: 100%;
-    background: #FF7A00;
-    border-radius: 2px;
-    transition: width 0.3s;
-}
-
-
 /* ====================================================
    04 — ABOUT
    ==================================================== */
@@ -1319,6 +1297,16 @@ h1, h2, h3 {
 
     .hero-title {
         font-size: clamp(3rem, 12vw, 4.5rem);
+    }
+
+    .hero .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        gap: 6px;
+    }
+
+    .hero .btn-arrow {
+        font-size: 0.85rem;
     }
 
     .flavors, .about, .preorder {
